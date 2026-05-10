@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Test 1 - Destination B1</title>
+    <style>
+        :root {
+            --font-main: 'Times New Roman', Times, serif;
+            --font-sans: Arial, Helvetica, sans-serif;
+        }
+        body {
+            font-family: var(--font-main);
+            background-color: #e5e7eb;
+            margin: 0;
+            padding: 20px;
+            color: #000;
+        }
+        /* A4 Paper Styling for Screen */
+        .page {
+            background-color: #fff;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto 20px auto;
+            padding: 15mm 20mm;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+            position: relative;
+        }
+        
+        /* Header Formatting */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-family: var(--font-sans);
+            font-size: 14px;
+        }
+        .header-left, .header-right {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .test-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .test-subtitle {
+            text-align: center;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        /* Section Formatting */
+        .section-title {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #f3f4f6;
+            padding: 5px 10px;
+            margin: 20px 0 15px 0;
+            border-left: 4px solid #000;
+        }
+        .instruction {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        /* Layout Utilities */
+        .two-columns {
+            column-count: 2;
+            column-gap: 12mm;
+        }
+        .question-block {
+            break-inside: avoid; /* Prevents question breaking across columns/pages */
+            margin-bottom: 18px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .question-number {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .blank {
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            min-width: 60px;
+            margin: 0 5px;
+        }
+
+        /* Specific writing spaces */
+        .writing-block {
+            margin-bottom: 25px;
+        }
+        .writing-line {
+            margin-top: 15px;
+            border-bottom: 1px dotted #000;
+            height: 25px;
+            width: 100%;
+        }
+        .arrow::before {
+            content: "→ ";
+            font-weight: bold;
+            margin-left: 15px;
+        }
+
+        /* Reading Passage */
+        .reading-passage {
+            line-height: 2;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* MCQ Formatting */
+        .mcq-options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        /* Answer Key Specific */
+        .answer-key-section {
+            font-family: var(--font-sans);
+            font-size: 14px;
+        }
+        .key-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: 2px dashed #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .key-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .key-item {
+            margin-bottom: 5px;
+        }
+        .key-explanation {
+            font-style: italic;
+            color: #4b5563;
+            font-size: 12px;
+            display: block;
+            margin-left: 20px;
+        }
+
+        /* Print Specific CSS */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 15mm;
+                page-break-after: always;
+            }
+            .page-break-before {
+                page-break-before: always;
+            }
+            /* Hide print dialog buttons if any were added */
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: Start of Test -->
+    <div class="page">
+        <div class="header">
+            <div class="header-left">
+                <div><strong>Name:</strong> ___________________________</div>
+                <div><strong>Class:</strong> ___________________________</div>
+            </div>
+            <div class="header-right">
+                <div><strong>Date:</strong> _____/_____/20___</div>
+                <div><strong>Score:</strong> _______ / 240</div>
+            </div>
+        </div>
+
+        <div class="test-title">PROGRESS TEST 1</div>
+        <div class="test-subtitle">Grammar & Vocabulary (Destination B1 Level)</div>
+
+        <div class="section-title">PART I: TENSES</div>
+        <div class="instruction">Complete the sentences using the correct tense of the verbs in brackets.</div>
+        
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">1.</span> Water always (boil) ________________ at 100°C, regardless of the container used.</div>
+            <div class="question-block"><span class="question-number">2.</span> My younger brother (always / take) ________________ my CDs without asking, which makes me extremely angry.</div>
+            <div class="question-block"><span class="question-number">3.</span> I (think) ________________ about the complex mathematics project right now, but I still cannot find the solution.</div>
+            <div class="question-block"><span class="question-number">4.</span> The head chef (taste) ________________ the tomato soup at the moment to check if it needs more salt.</div>
+            <div class="question-block"><span class="question-number">5.</span> I usually live in London, but I (stay) ________________ with my grandparents for a few days while my apartment is being renovated.</div>
+            <div class="question-block"><span class="question-number">6.</span> He normally (walk) ________________ to school, but today he (take) ________________ the bus because of the heavy rain.</div>
+            <div class="question-block"><span class="question-number">7.</span> This new brand of strawberry ice cream (taste) ________________ exceptionally good.</div>
+            <div class="question-block"><span class="question-number">8.</span> I (not / believe) ________________ a single word he says; he has lied to the committee too many times before.</div>
+            <div class="question-block"><span class="question-number">9.</span> Look at the pitch! The striker (take) ________________ the ball, bypasses the defender, and (score) ________________ a magnificent goal!</div>
+            <div class="question-block"><span class="question-number">10.</span> Personally, I (think) ________________ that the new environmental policy implemented by the government is a step in the right direction.</div>
+            <div class="question-block"><span class="question-number">11.</span> The schedule dictates that the express train (leave) ________________ at exactly 10:30 tomorrow morning.</div>
+            <div class="question-block"><span class="question-number">12.</span> I (meet) ________________ my colleagues at the central cinema at 8 PM; we have already agreed on the time and place.</div>
+            <div class="question-block"><span class="question-number">13.</span> The new semester officially (start) ________________ on the first Monday of September.</div>
+            <div class="question-block"><span class="question-number">14.</span> Why (you / smell) ________________ the milk? Has it gone bad?</div>
+            <div class="question-block"><span class="question-number">15.</span> This heavy box (contain) ________________ delicate electronic equipment, so handle it carefully.</div>
+            <div class="question-block"><span class="question-number">16.</span> I (watch) ________________ television at 8 o'clock last night when suddenly the power went out in the entire neighborhood.</div>
+            <div class="question-block"><span class="question-number">17.</span> When I was a child, I (go) ________________ to the cinema every weekend with my father.</div>
+            <div class="question-block"><span class="question-number">18.</span> Last year, we (travel) ________________ to Paris for our summer holiday, which was an unforgettable single experience.</div>
+            <div class="question-block"><span class="question-number">19.</span> While the mechanic (repair) ________________ my car, I was reading a magazine in the waiting room.</div>
+            <div class="question-block"><span class="question-number">20.</span> He (be) ________________ very shy during his primary school years, but he is extremely confident and outgoing now.</div>
+            <div class="question-block"><span class="question-number">21.</span> Yesterday morning, I (get) ________________ up, (have) ________________ a quick shower, and (run) ________________ to the train station to catch the early commute.</div>
+            <div class="question-block"><span class="question-number">22.</span> The telephone (ring) ________________ continuously while my brother (try) ________________ to study for his final university exams.</div>
+            <div class="question-block"><span class="question-number">23.</span> She (play) ________________ professional tennis a decade ago, but she does not play anymore.</div>
+            <div class="question-block"><span class="question-number">24.</span> We (not / use to) ________________ have a personal computer when we lived in the rural countryside.</div>
+            <div class="question-block"><span class="question-number">25.</span> I (drive) ________________ along the coastal highway when a dog unexpectedly ran across the road.</div>
+            <div class="question-block"><span class="question-number">26.</span> (you / use to) ________________ collect stamps when you were in secondary school?</div>
+            <div class="question-block"><span class="question-number">27.</span> The ground was wet this morning because it (rain) ________________ heavily throughout the night.</div>
+            <div class="question-block"><span class="question-number">28.</span> She (not / realize) ________________ that she was driving in the wrong direction until she saw the sign.</div>
+            <div class="question-block"><span class="question-number">29.</span> I (visit) ________________ the national museum three times when I was in London last month.</div>
+            <div class="question-block"><span class="question-number">30.</span> As I (walk) ________________ down the street, I accidentally bumped into an old friend.</div>
+            <div class="question-block"><span class="question-number">31.</span> I (know) ________________ my best friend for over ten years, and we have never had a major argument.</div>
+            <div class="question-block"><span class="question-number">32.</span> You look absolutely exhausted! (you / run) ________________ in this terrible midday heat?</div>
+            <div class="question-block"><span class="question-number">33.</span> By the time we finally arrived at the railway station, the express train (already / leave) ________________.</div>
+            <div class="question-block"><span class="question-number">34.</span> The ground was entirely wet this morning because it (rain) ________________ heavily throughout the night.</div>
+            <div class="question-block"><span class="question-number">35.</span> She (study) ________________ advanced biology for three hours straight and still has two chapters left to read.</div>
+            <div class="question-block"><span class="question-number">36.</span> I (never / be) ________________ to Japan, but I plan to visit Kyoto next spring.</div>
+            <div class="question-block"><span class="question-number">37.</span> He (wait) ________________ for an hour before the management finally called his name for the interview.</div>
+            <div class="question-block"><span class="question-number">38.</span> We cannot use the car right now because I (lose) ________________ the keys somewhere in the garden.</div>
+            <div class="question-block"><span class="question-number">39.</span> She (understand) ________________ the complex physics theorem ever since the professor explained it last week.</div>
+            <div class="question-block"><span class="question-number">40.</span> As soon as the sun had set, we realized we (walk) ________________ in the wrong direction for miles without a map.</div>
+            <div class="question-block"><span class="question-number">41.</span> They (just / announce) ________________ the winner of the architectural competition.</div>
+            <div class="question-block"><span class="question-number">42.</span> How long (you / learn) ________________ Spanish? Your pronunciation is excellent.</div>
+            <div class="question-block"><span class="question-number">43.</span> Before he moved to New York, he (live) ________________ in Chicago for five years.</div>
+            <div class="question-block"><span class="question-number">44.</span> I (always / like) ________________ classical music, even when I was a teenager.</div>
+            <div class="question-block"><span class="question-number">45.</span> She (write) ________________ emails all morning, and she (write) ________________ ten emails so far.</div>
+            <div class="question-block"><span class="question-number">46.</span> Look at those enormous dark clouds gathering in the west! It (rain) ________________ very soon.</div>
+            <div class="question-block"><span class="question-number">47.</span> I personally believe that robotic automation (do) ________________ all the dangerous manual labor in the future.</div>
+            <div class="question-block"><span class="question-number">48.</span> It is freezing in this room. I (close) ________________ the window immediately.</div>
+            <div class="question-block"><span class="question-number">49.</span> She has made her decision; she (study) ________________ marine biology at the University of Southampton next year.</div>
+            <div class="question-block"><span class="question-number">50.</span> Do not worry about those heavy suitcases; I (help) ________________ you carry them upstairs.</div>
+            <div class="question-block"><span class="question-number">51.</span> We (have) ________________ dinner with the board of directors this Friday evening; the restaurant is already booked.</div>
+            <div class="question-block"><span class="question-number">52.</span> If you do not stop shouting, I (call) ________________ the local authorities.</div>
+            <div class="question-block"><span class="question-number">53.</span> The new blockbuster film (start) ________________ at exactly 8 PM tonight.</div>
+            <div class="question-block"><span class="question-number">54.</span> I am sure you (pass) ________________ the driving test with flying colors.</div>
+            <div class="question-block"><span class="question-number">55.</span> Watch out! You (drop) ________________ those fragile glass vases!</div>
+        </div>
+    </div> <!-- End Page 1 -->
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="section-title">PART II: PREPOSITIONS</div>
+        <div class="instruction">Fill in the blanks with the correct prepositions.</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">56.</span> The final examination takes place ________________ the morning of ________________ 2nd May.</div>
+            <div class="question-block"><span class="question-number">57.</span> We are planning a massive celebration ________________ the end of the 21st century.</div>
+            <div class="question-block"><span class="question-number">58.</span> Let us schedule a meeting for ________________ next week to discuss the financial projections.</div>
+            <div class="question-block"><span class="question-number">59.</span> The suspect was seen standing ________________ the bus stop just before the incident occurred.</div>
+            <div class="question-block"><span class="question-number">60.</span> It is strictly forbidden to smoke while traveling ________________ a public bus.</div>
+            <div class="question-block"><span class="question-number">61.</span> Please leave your physical documents ________________ the table situated ________________ the first floor.</div>
+            <div class="question-block"><span class="question-number">62.</span> The entire family gathers together ________________ Christmas to exchange gifts.</div>
+            <div class="question-block"><span class="question-number">63.</span> They arrived ________________ Paris late ________________ night after a gruelling twelve-hour journey.</div>
+            <div class="question-block"><span class="question-number">64.</span> We managed to fit all the fragile items ________________ a small wooden box.</div>
+            <div class="question-block"><span class="question-number">65.</span> He prefers to travel ________________ a taxi rather than ________________ the train when it rains.</div>
+            <div class="question-block"><span class="question-number">66.</span> I will be ready to leave ________________ five minutes, so please wait for me.</div>
+            <div class="question-block"><span class="question-number">67.</span> The office is located ________________ 10 Main Street, right next to the bakery.</div>
+            <div class="question-block"><span class="question-number">68.</span> She was born ________________ 1999, which makes her part of Gen Z.</div>
+            <div class="question-block"><span class="question-number">69.</span> We are going to the cinema ________________ tomorrow evening.</div>
+            <div class="question-block"><span class="question-number">70.</span> The children are currently studying ________________ school, but they will be home soon.</div>
+        </div>
+
+        <div class="section-title">PART III: QUANTIFIERS & COUNTABILITY</div>
+        <div class="instruction">Choose the correct option in brackets.</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">71.</span> The committee has provided some excellent (advice / advices) regarding our recent financial troubles.</div>
+            <div class="question-block"><span class="question-number">72.</span> The latest (news) broadcasted on the radio (was / were) surprisingly optimistic.</div>
+            <div class="question-block"><span class="question-number">73.</span> I need to buy a new piece of (furniture / furnitures) to match the aesthetics of the living room.</div>
+            <div class="question-block"><span class="question-number">74.</span> We do not have (many / much) information regarding the updated software protocol.</div>
+            <div class="question-block"><span class="question-number">75.</span> I have very (few / little) knowledge about quantum mechanics, so I cannot help you.</div>
+            <div class="question-block"><span class="question-number">76.</span> He carries too much (luggage / luggages) whenever he travels abroad.</div>
+            <div class="question-block"><span class="question-number">77.</span> There is heavy (traffic / traffics) on the highway today due to the accident.</div>
+            <div class="question-block"><span class="question-number">78.</span> Only (a few / a little) students managed to pass the exceptionally difficult mathematics exam.</div>
+            <div class="question-block"><span class="question-number">79.</span> They have made a lot of (progress / progresses) in their scientific research.</div>
+            <div class="question-block"><span class="question-number">80.</span> We need to buy some fresh (bread / breads) from the bakery for breakfast.</div>
+        </div>
+
+        <div class="section-title">PART IV: ARTICLES</div>
+        <div class="instruction">Fill in the blanks with appropriate articles (a, an, the, or ∅).</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">81.</span> She is currently working as ________ teacher at ________ university in northern England.</div>
+            <div class="question-block"><span class="question-number">82.</span> It takes exactly ________ hour to drive from here to ________ Alps depending on ________ traffic.</div>
+            <div class="question-block"><span class="question-number">83.</span> ________ UK and ________ USA are currently negotiating a new bilateral trade agreement.</div>
+            <div class="question-block"><span class="question-number">84.</span> She plays ________ piano beautifully and is arguably ________ most talented musician in the orchestra.</div>
+            <div class="question-block"><span class="question-number">85.</span> ________ water is absolutely essential for ________ life to thrive on ________ Earth.</div>
+            <div class="question-block"><span class="question-number">86.</span> My brother is in ________ bed with a terrible fever, so he cannot go to ________ school today.</div>
+            <div class="question-block"><span class="question-number">87.</span> We sailed across ________ Atlantic Ocean during our summer vacation.</div>
+            <div class="question-block"><span class="question-number">88.</span> I saw ________ dog wandering in the park. ________ dog looked extremely hungry.</div>
+            <div class="question-block"><span class="question-number">89.</span> He is studying ________ maths and ________ French at the academy.</div>
+            <div class="question-block"><span class="question-number">90.</span> They went to ________ prison to visit a relative who was incarcerated last year.</div>
+        </div>
+    </div> <!-- End Page 2 -->
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="section-title">PART V: MODAL VERBS (REWRITING)</div>
+        <div class="instruction">Rewrite the sentences using a suitable modal verb (can, could, managed to, must, mustn't, don't have to, should, ought to, might, can't).</div>
+        
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">91.</span> It is not necessary for you to wear a formal suit to the office on Fridays.</div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">92.</span> You are absolutely prohibited from smoking inside the hospital premises.</div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">93.</span> I am 100% certain that the man standing outside is not John, because John flew to Paris yesterday.</div>
+            <div class="arrow">That <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">94.</span> It is highly probable that you are exhausted after traveling continuously for twenty-four hours.</div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">95.</span> The fire spread rapidly through the building, but thankfully, everyone escaped.</div>
+            <div class="arrow">The fire was terrible, but everyone <span class="writing-line" style="display:inline-block; width:65%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">96.</span> I strongly advise you to consult a medical professional about that persistent cough. (Use 'ought')</div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">97.</span> It is mandatory according to the new law that all passengers wear seatbelts.</div>
+            <div class="arrow">All passengers <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">98.</span> When I was four years old, I possessed the ability to read fluently.</div>
+            <div class="arrow">I <span class="writing-line" style="display:inline-block; width:85%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">99.</span> Perhaps they will arrive late due to the heavy traffic.</div>
+            <div class="arrow">They <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">100.</span> Is it permitted for me to leave the examination room now?</div>
+            <div class="arrow"><span class="writing-line" style="display:inline-block; width:80%;"></span> ?</div>
+        </div>
+
+        <div class="section-title">PART VI: MODAL PERFECT</div>
+        <div class="instruction">Complete the dialogues using Modal Perfect structures (e.g., must have done, should have done, etc.).</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">101.</span> The kitchen window is completely shattered. The burglar (get) ____________________ in through here.</div>
+            <div class="question-block"><span class="question-number">102.</span> You bought three gallons of milk, but we already have plenty in the refrigerator. You (buy) ____________________ so much milk.</div>
+            <div class="question-block"><span class="question-number">103.</span> She was standing right next to me during the entire incident, so she (steal) ____________________ the missing documents.</div>
+            <div class="question-block"><span class="question-number">104.</span> I failed the mathematics examination terribly. I realise now that I (study) ____________________ much harder.</div>
+            <div class="question-block"><span class="question-number">105.</span> I cannot find my car keys anywhere in the house. I suppose I (leave) ____________________ them at the office.</div>
+            <div class="question-block"><span class="question-number">106.</span> Eating that entire chocolate cake was a terrible idea; my stomach hurts violently. I (eat) ____________________ it.</div>
+            <div class="question-block"><span class="question-number">107.</span> The ground is completely dry this morning, so it (rain) ____________________ during the night.</div>
+            <div class="question-block"><span class="question-number">108.</span> You (tell) ____________________ me that the meeting was cancelled! I drove all the way here for nothing.</div>
+            <div class="question-block"><span class="question-number">109.</span> John (know) ____________________ about the surprise party. He looked genuinely shocked when he walked in.</div>
+            <div class="question-block"><span class="question-number">110.</span> They (arrive) ____________________ by now. The journey usually only takes an hour.</div>
+        </div>
+    </div> <!-- End Page 3 -->
+
+    <!-- PAGE 4 -->
+    <div class="page">
+        <div class="section-title">PART VII: PASSIVE VOICE</div>
+        <div class="instruction">Change the following active sentences into passive sentences. Omit the agent (by...) if it is unnecessary.</div>
+        
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">111.</span> Millions of corporate users send emails across the globe every single day.</div>
+            <div class="arrow">Emails <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">112.</span> Thomas Edison invented the practical incandescent light bulb in 1879.</div>
+            <div class="arrow">The light bulb <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">113.</span> The local government is currently building a massive new hospital in the town centre.</div>
+            <div class="arrow">A new hospital <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">114.</span> The mechanic was repairing my vehicle when I suddenly arrived at the garage.</div>
+            <div class="arrow">My vehicle <span class="writing-line" style="display:inline-block; width:78%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">115.</span> An unknown individual has completely stolen my vintage motorcycle!</div>
+            <div class="arrow">My vintage motorcycle <span class="writing-line" style="display:inline-block; width:70%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">116.</span> The administration had officially cancelled the football match before the spectators even arrived.</div>
+            <div class="arrow">The football match <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">117.</span> The examination board will announce the final university admission results tomorrow.</div>
+            <div class="arrow">The final results <span class="writing-line" style="display:inline-block; width:76%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">118.</span> You must complete this urgent administrative job by the end of today.</div>
+            <div class="arrow">This urgent job <span class="writing-line" style="display:inline-block; width:76%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">119.</span> Consumers can purchase VIP concert tickets through the official online portal.</div>
+            <div class="arrow">VIP concert tickets <span class="writing-line" style="display:inline-block; width:74%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">120.</span> The police successfully arrested the notorious jewel thief late last night.</div>
+            <div class="arrow">The notorious jewel thief <span class="writing-line" style="display:inline-block; width:70%;"></span></div>
+        </div>
+
+        <div class="section-title">PART VIII: RELATIVE CLAUSES</div>
+        <div class="instruction">Combine the sentences using a relative pronoun (who, which, that, whose, where, when, why). Add commas if it is a non-defining clause.</div>
+
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">121.</span> The man is extremely friendly. He lives in the apartment next door.</div>
+            <div class="arrow">The man <span class="writing-line" style="display:inline-block; width:80%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">122.</span> My older brother is a highly respected cardiologist. He currently lives in London.</div>
+            <div class="arrow">My older brother <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">123.</span> That is the aggressive boy. His dog aggressively bit my leg yesterday.</div>
+            <div class="arrow">That is the boy <span class="writing-line" style="display:inline-block; width:76%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">124.</span> We stayed at a luxurious hotel near the coast. This is the hotel.</div>
+            <div class="arrow">This is the hotel <span class="writing-line" style="display:inline-block; width:75%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">125.</span> I distinctly remember the exact day. We met each other on that day.</div>
+            <div class="arrow">I distinctly remember <span class="writing-line" style="display:inline-block; width:72%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">126.</span> He purchased a sports car last month. The car is incredibly fast. (Only use 'which')</div>
+            <div class="arrow">The car <span class="writing-line" style="display:inline-block; width:82%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">127.</span> The reason is still a mystery. He resigned from his position for that reason.</div>
+            <div class="arrow">The reason <span class="writing-line" style="display:inline-block; width:79%;"></span></div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">128.</span> J.K. Rowling is a famous author. She wrote the Harry Potter series.</div>
+            <div class="arrow">J.K. Rowling <span class="writing-line" style="display:inline-block; width:78%;"></span></div>
+        </div>
+    </div> <!-- End Page 4 -->
+
+    <!-- PAGE 5 -->
+    <div class="page">
+        <div class="section-title">PART IX: QUESTION TAGS & REPORTED SPEECH</div>
+        <div class="instruction">Complete the tag questions or rewrite the direct questions into indirect speech.</div>
+        
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">129.</span> You are currently enrolled as a university student, ____________________?</div>
+            <div class="question-block"><span class="question-number">130.</span> She did not attend the corporate networking party, ____________________?</div>
+            <div class="question-block"><span class="question-number">131.</span> They have finished the quarterly financial report, ____________________?</div>
+            <div class="question-block"><span class="question-number">132.</span> I am completely right about the statistical analysis, ____________________?</div>
+            <div class="question-block"><span class="question-number">133.</span> Let us go to the newly opened Italian restaurant tonight, ____________________?</div>
+            <div class="question-block"><span class="question-number">134.</span> Open the emergency exit door immediately, ____________________?</div>
+            <div class="question-block"><span class="question-number">135.</span> Don't forget to submit the assignment by midnight, ____________________?</div>
+        </div>
+
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">136.</span> Direct: "Where is the central national bank located?"</div>
+            <div class="arrow">Could you please tell me <span class="writing-line" style="display:inline-block; width:65%;"></span> ?</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">137.</span> Direct: "What exact time does the express train to Edinburgh leave?"</div>
+            <div class="arrow">Do you happen to know <span class="writing-line" style="display:inline-block; width:66%;"></span> ?</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">138.</span> Direct: "Why did the board of directors reject the proposal?"</div>
+            <div class="arrow">I would like to know <span class="writing-line" style="display:inline-block; width:70%;"></span> .</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">139.</span> Direct: "Who saw you walking near the restricted area?"</div>
+            <div class="arrow"><span class="writing-line" style="display:inline-block; width:80%;"></span> ?</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">140.</span> Direct: "Did she pass her driving test?"</div>
+            <div class="arrow">I wonder if <span class="writing-line" style="display:inline-block; width:78%;"></span> .</div>
+        </div>
+
+        <div class="section-title">PART X: WORD FORMATION</div>
+        <div class="instruction">Use the correct form of the word in brackets to fill in the blanks.</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">141.</span> The final (DECIDE) ________________ rests with the board of directors regarding the merger.</div>
+            <div class="question-block"><span class="question-number">142.</span> They couldn't afford the car, but they found a more (AFFORD) ________________ option at the dealership.</div>
+            <div class="question-block"><span class="question-number">143.</span> Making a direct (COMPARE) ________________ between the two candidates is quite difficult.</div>
+            <div class="question-block"><span class="question-number">144.</span> The new software provides an invaluable (SERVE) ________________ to small business owners.</div>
+            <div class="question-block"><span class="question-number">145.</span> Children usually develop self-awareness and (CONFIDENT) ________________ in the second year of life.</div>
+            <div class="question-block"><span class="question-number">146.</span> He showed great (BRAVE) ________________ during the rescue operation in the burning building.</div>
+            <div class="question-block"><span class="question-number">147.</span> Please ensure that all your answers are (CORRECT) ________________ before handing in the exam paper.</div>
+            <div class="question-block"><span class="question-number">148.</span> The manager's (REFUSE) ________________ to compromise led to the strike.</div>
+            <div class="question-block"><span class="question-number">149.</span> It is important to have a basic (KNOW) ________________ of first aid in case of emergencies.</div>
+            <div class="question-block"><span class="question-number">150.</span> The documentary provided a fascinating (INVESTIGATE) ________________ into the lives of deep-sea creatures.</div>
+        </div>
+
+        <div class="section-title">PART XI: PHRASAL VERBS</div>
+        <div class="instruction">Fill in the blanks with a suitable preposition/adverb to complete the phrasal verbs.</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">151.</span> I need to look ________________ this unfamiliar word in the dictionary.</div>
+            <div class="question-block"><span class="question-number">152.</span> The football player was sent ________________ the pitch for committing a dangerous foul.</div>
+            <div class="question-block"><span class="question-number">153.</span> Please turn ________________ the volume; the music is deafening.</div>
+            <div class="question-block"><span class="question-number">154.</span> If you make a mistake, simply cross it ________________ with a single line.</div>
+            <div class="question-block"><span class="question-number">155.</span> We need to set ________________ early tomorrow morning to avoid the rush hour traffic.</div>
+            <div class="question-block"><span class="question-number">156.</span> The plane took ________________ smoothly despite the heavy winds.</div>
+            <div class="question-block"><span class="question-number">157.</span> You must carry ________________ with your studies even if it feels overwhelming.</div>
+            <div class="question-block"><span class="question-number">158.</span> Thieves broke ________________ our office downtown and stole the computers.</div>
+            <div class="question-block"><span class="question-number">159.</span> Speak ________________! We can't hear you at the back of the auditorium.</div>
+            <div class="question-block"><span class="question-number">160.</span> I didn't wash ________________ the dinner plates until the morning after.</div>
+        </div>
+    </div> <!-- End Page 5 -->
+
+    <!-- PAGE 6 -->
+    <div class="page">
+        <div class="section-title">PART XII: DEPENDENT PREPOSITIONS</div>
+        <div class="instruction">Choose the correct preposition to fill in the blank.</div>
+        <div class="two-columns">
+            <div class="question-block"><span class="question-number">161.</span> He was accused ________________ failing to pay his taxes for over three years.</div>
+            <div class="question-block"><span class="question-number">162.</span> She is deeply ashamed ________________ her behavior at the corporate dinner last night.</div>
+            <div class="question-block"><span class="question-number">163.</span> The team manager blamed the defeat ________________ the poor weather conditions.</div>
+            <div class="question-block"><span class="question-number">164.</span> I am incredibly grateful ________________ your assistance during the transition period.</div>
+            <div class="question-block"><span class="question-number">165.</span> The CEO congratulated the marketing team ________________ their outstanding campaign success.</div>
+            <div class="question-block"><span class="question-number">166.</span> ________________ spite of the pouring rain, they decided to continue the football match.</div>
+            <div class="question-block"><span class="question-number">167.</span> I bought this antique vase ________________ cash because the terminal was broken.</div>
+            <div class="question-block"><span class="question-number">168.</span> He is heavily ________________ debt after his business venture collapsed.</div>
+            <div class="question-block"><span class="question-number">169.</span> My parents were very sympathetic ________________ my situation when I lost my job.</div>
+            <div class="question-block"><span class="question-number">170.</span> We have completely run out ________________ printer ink; please order some more.</div>
+        </div>
+
+        <div class="section-title">PART XIII: MULTIPLE CHOICE</div>
+        <div class="instruction">Choose the best answer (A, B, C, or D) to complete the sentences.</div>
+        
+        <div class="two-columns">
+            <div class="question-block">
+                <span class="question-number">171.</span> The soup __________ strange; I think the milk might have gone bad.
+                <div class="mcq-options">
+                    <div>A) is tasting</div>
+                    <div>B) tastes</div>
+                    <div>C) has been tasting</div>
+                    <div>D) taste</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">172.</span> By the time we reached the cinema, the film __________.
+                <div class="mcq-options">
+                    <div>A) started</div>
+                    <div>B) has started</div>
+                    <div>C) had started</div>
+                    <div>D) was starting</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">173.</span> I __________ to play the violin when I was younger, but I gave it up.
+                <div class="mcq-options">
+                    <div>A) used</div>
+                    <div>B) was used</div>
+                    <div>C) am used</div>
+                    <div>D) use</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">174.</span> The committee __________ the financial records for three hours without a break.
+                <div class="mcq-options">
+                    <div>A) are analyzing</div>
+                    <div>B) have been analyzing</div>
+                    <div>C) analyzed</div>
+                    <div>D) analyzes</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">175.</span> Look at the dense fog! The flight __________ delayed.
+                <div class="mcq-options">
+                    <div>A) is going to be</div>
+                    <div>B) will be</div>
+                    <div>C) is being</div>
+                    <div>D) has been</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">176.</span> I __________ him since we graduated from high school together in 2015.
+                <div class="mcq-options">
+                    <div>A) haven't been seeing</div>
+                    <div>B) didn't see</div>
+                    <div>C) haven't seen</div>
+                    <div>D) don't see</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">177.</span> The architectural plans __________ approved by the city council yesterday.
+                <div class="mcq-options">
+                    <div>A) are</div>
+                    <div>B) have been</div>
+                    <div>C) were</div>
+                    <div>D) had been</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">178.</span> He generally works efficiently, but today he __________ very slowly.
+                <div class="mcq-options">
+                    <div>A) works</div>
+                    <div>B) worked</div>
+                    <div>C) is working</div>
+                    <div>D) has worked</div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Page 6 -->
+
+    <!-- PAGE 7 -->
+    <div class="page">
+        <div class="two-columns">
+            <div class="question-block">
+                <span class="question-number">179.</span> You __________ bring a towel to the gym; they provide them for free.
+                <div class="mcq-options">
+                    <div>A) mustn't</div>
+                    <div>B) don't have to</div>
+                    <div>C) shouldn't</div>
+                    <div>D) can't</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">180.</span> The ground is wet. It __________ last night.
+                <div class="mcq-options">
+                    <div>A) must have rained</div>
+                    <div>B) should have rained</div>
+                    <div>C) can't have rained</div>
+                    <div>D) needn't have rained</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">181.</span> Please remind me to send the email, __________?
+                <div class="mcq-options">
+                    <div>A) don't you</div>
+                    <div>B) will you</div>
+                    <div>C) aren't you</div>
+                    <div>D) shall we</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">182.</span> The new museum is located __________ the high street.
+                <div class="mcq-options">
+                    <div>A) in</div>
+                    <div>B) at</div>
+                    <div>C) on</div>
+                    <div>D) to</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">183.</span> They prefer taking vacations __________ spring.
+                <div class="mcq-options">
+                    <div>A) in</div>
+                    <div>B) at</div>
+                    <div>C) on</div>
+                    <div>D) during</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">184.</span> I need some __________ regarding the legal procedures.
+                <div class="mcq-options">
+                    <div>A) advices</div>
+                    <div>B) advice</div>
+                    <div>C) an advice</div>
+                    <div>D) piece of advices</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">185.</span> He is studying to become __________ architect at __________ university in London.
+                <div class="mcq-options">
+                    <div>A) an / a</div>
+                    <div>B) a / an</div>
+                    <div>C) an / the</div>
+                    <div>D) an / an</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">186.</span> __________ Atlantic Ocean separates North America from Europe.
+                <div class="mcq-options">
+                    <div>A) A</div>
+                    <div>B) An</div>
+                    <div>C) The</div>
+                    <div>D) Zero article</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">187.</span> The suspect __________ the money; she was in police custody all weekend.
+                <div class="mcq-options">
+                    <div>A) shouldn't have stolen</div>
+                    <div>B) might have stolen</div>
+                    <div>C) can't have stolen</div>
+                    <div>D) mustn't have stolen</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">188.</span> We arrived at the station late, but we __________ catch the train.
+                <div class="mcq-options">
+                    <div>A) could</div>
+                    <div>B) managed to</div>
+                    <div>C) ought to</div>
+                    <div>D) should</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">189.</span> The local news __________ consistently reporting negative economic trends lately.
+                <div class="mcq-options">
+                    <div>A) are</div>
+                    <div>B) is</div>
+                    <div>C) have been</div>
+                    <div>D) were</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">190.</span> That is the manager __________ strategic vision saved the company.
+                <div class="mcq-options">
+                    <div>A) who</div>
+                    <div>B) which</div>
+                    <div>C) that</div>
+                    <div>D) whose</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">191.</span> Let's review the quarterly budget this afternoon, __________?
+                <div class="mcq-options">
+                    <div>A) will we</div>
+                    <div>B) do we</div>
+                    <div>C) shall we</div>
+                    <div>D) let we not</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">192.</span> I bought __________ pair of shoes yesterday. __________ shoes are incredibly comfortable.
+                <div class="mcq-options">
+                    <div>A) a / A</div>
+                    <div>B) the / The</div>
+                    <div>C) a / The</div>
+                    <div>D) the / A</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">193.</span> He cut __________ while chopping vegetables in the kitchen.
+                <div class="mcq-options">
+                    <div>A) him</div>
+                    <div>B) himself</div>
+                    <div>C) his</div>
+                    <div>D) by himself</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">194.</span> The presentation __________ by the CEO when the fire alarm interrupted.
+                <div class="mcq-options">
+                    <div>A) was given</div>
+                    <div>B) had been given</div>
+                    <div>C) was being given</div>
+                    <div>D) is given</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">195.</span> She asked me if I knew what time __________.
+                <div class="mcq-options">
+                    <div>A) the train leaves</div>
+                    <div>B) does the train leave</div>
+                    <div>C) did the train leave</div>
+                    <div>D) the train leave</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">196.</span> I'll have the technical report ready __________ five minutes.
+                <div class="mcq-options">
+                    <div>A) at</div>
+                    <div>B) on</div>
+                    <div>C) in</div>
+                    <div>D) by</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">197.</span> We traveled to the rural village __________ bus.
+                <div class="mcq-options">
+                    <div>A) in</div>
+                    <div>B) at</div>
+                    <div>C) by</div>
+                    <div>D) on</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">198.</span> The politician, __________ was involved in the scandal, resigned immediately.
+                <div class="mcq-options">
+                    <div>A) that</div>
+                    <div>B) which</div>
+                    <div>C) who</div>
+                    <div>D) whom</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">199.</span> They __________ to the theatre every month, but now they prefer streaming movies at home.
+                <div class="mcq-options">
+                    <div>A) went</div>
+                    <div>B) were going</div>
+                    <div>C) used to go</div>
+                    <div>D) had gone</div>
+                </div>
+            </div>
+            <div class="question-block">
+                <span class="question-number">200.</span> The laboratory equipment __________ properly calibrated before the experiment began.
+                <div class="mcq-options">
+                    <div>A) had been</div>
+                    <div>B) has been</div>
+                    <div>C) was being</div>
+                    <div>D) is</div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Page 7 -->
+
+    <!-- PAGE 8 -->
+    <div class="page">
+        <div class="section-title">PART XIV: SENTENCE TRANSFORMATION</div>
+        <div class="instruction">Rewrite the second sentence so that it has a similar meaning to the first sentence, using the word given. Do not change the word given. You must use between two and five words, including the word given.</div>
+
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">201.</span> I am certain that Peter did not leave the door unlocked. <strong>(HAVE)</strong></div>
+            <div class="arrow">Peter <span class="writing-line" style="display:inline-block; width:60%;"></span> the door unlocked.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">202.</span> It is a bad idea that you drove so fast in the rain. <strong>(SHOULD)</strong></div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:60%;"></span> so fast in the rain.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">203.</span> I started learning French three years ago and I am still learning. <strong>(BEEN)</strong></div>
+            <div class="arrow">I <span class="writing-line" style="display:inline-block; width:65%;"></span> for three years.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">204.</span> They are building a massive bridge across the river. <strong>(BUILT)</strong></div>
+            <div class="arrow">A massive bridge <span class="writing-line" style="display:inline-block; width:55%;"></span> across the river.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">205.</span> Someone stole my wallet while I was riding the subway. <strong>(STOLEN)</strong></div>
+            <div class="arrow">My wallet <span class="writing-line" style="display:inline-block; width:50%;"></span> while I was riding the subway.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">206.</span> "What time does the regional manager arrive?" she asked. <strong>(KNOW)</strong></div>
+            <div class="arrow">She asked if I <span class="writing-line" style="display:inline-block; width:55%;"></span> arrived.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">207.</span> It is not necessary for the employees to work on weekends. <strong>(HAVE)</strong></div>
+            <div class="arrow">The employees <span class="writing-line" style="display:inline-block; width:55%;"></span> work on weekends.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">208.</span> Smoking is strictly forbidden in the laboratory. <strong>(MUST)</strong></div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:60%;"></span> in the laboratory.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">209.</span> We did not go on holiday because we did not have enough money. <strong>(AFFORD)</strong></div>
+            <div class="arrow">We <span class="writing-line" style="display:inline-block; width:60%;"></span> go on holiday.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">210.</span> My brother is always borrowing my clothes without asking, and it annoys me! <strong>(ALWAYS)</strong></div>
+            <div class="arrow">My brother <span class="writing-line" style="display:inline-block; width:55%;"></span> my clothes without asking!</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">211.</span> The train departed before we reached the platform. <strong>(ALREADY)</strong></div>
+            <div class="arrow">By the time we reached the platform, the train <span class="writing-line" style="display:inline-block; width:45%;"></span>.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">212.</span> I advise you to see a dentist about that toothache. <strong>(OUGHT)</strong></div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:60%;"></span> a dentist about that toothache.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">213.</span> There is no need for you to bring a gift to the party. <strong>(NEEDN'T)</strong></div>
+            <div class="arrow">You <span class="writing-line" style="display:inline-block; width:60%;"></span> a gift to the party.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">214.</span> People believe that the internet is the greatest invention. <strong>(CONSIDERED)</strong></div>
+            <div class="arrow">The internet <span class="writing-line" style="display:inline-block; width:55%;"></span> the greatest invention.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">215.</span> This is the hospital. I was born here. <strong>(WHERE)</strong></div>
+            <div class="arrow">This is the hospital <span class="writing-line" style="display:inline-block; width:55%;"></span> born.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">216.</span> They cancelled the match because of the heavy rain. <strong>(CALLED)</strong></div>
+            <div class="arrow">The match <span class="writing-line" style="display:inline-block; width:60%;"></span> because of the heavy rain.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">217.</span> Finding the solution to this mathematical problem is difficult. <strong>(WORK)</strong></div>
+            <div class="arrow">It is difficult to <span class="writing-line" style="display:inline-block; width:55%;"></span> this mathematical problem.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">218.</span> The police are investigating the mysterious robbery. <strong>(LOOKING)</strong></div>
+            <div class="arrow">The police <span class="writing-line" style="display:inline-block; width:60%;"></span> the mysterious robbery.</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">219.</span> I can't wait to go on summer vacation! <strong>(FORWARD)</strong></div>
+            <div class="arrow">I am really <span class="writing-line" style="display:inline-block; width:60%;"></span> on summer vacation!</div>
+        </div>
+        <div class="writing-block">
+            <div class="question-block"><span class="question-number">220.</span> She completely ignored the instructions I gave her. <strong>(ATTENTION)</strong></div>
+            <div class="arrow">She paid <span class="writing-line" style="display:inline-block; width:60%;"></span> the instructions I gave her.</div>
+        </div>
+    </div> <!-- End Page 8 -->
+
+    <!-- PAGE 9 -->
+    <div class="page">
+        <div class="section-title">PART XV: CLOZE TEST (READING)</div>
+        <div class="instruction">Read the passages and write ONE suitable word in each blank.</div>
+
+        <div class="reading-passage">
+            <strong>Passage 1: The Evolution of Communication</strong><br>
+            Communication <strong>(221)</strong> __________________ drastically changed over the past few decades. In the 20th century, people <strong>(222)</strong> __________________ to write physical letters to keep in touch with friends <strong>(223)</strong> __________________ lived far away. This process was extremely slow. However, the internet, <strong>(224)</strong> __________________ is now accessible to almost everyone, revolutionized everything. Today, millions of emails <strong>(225)</strong> __________________ sent every single day. If you want to talk to someone, you <strong>(226)</strong> __________________ not have to wait weeks for a reply. Instead, messages <strong>(227)</strong> __________________ be delivered instantly. It is widely believed that artificial intelligence <strong>(228)</strong> __________________ handle the majority of basic corporate communication in the near future. Even though technology has advanced, face-to-face interaction remains crucial, doesn't <strong>(229)</strong> __________________? We must <strong>(230)</strong> __________________ forget the value of personal connection.
+        </div>
+
+        <div class="reading-passage">
+            <strong>Passage 2: An Unfortunate Incident</strong><br>
+            Yesterday was a terrible day. I <strong>(231)</strong> __________________ walking to work at 8 AM when it suddenly started pouring rain. I <strong>(232)</strong> __________________ have brought an umbrella, but I checked the weather forecast the night before and it said it would be sunny. The meteorologist <strong>(233)</strong> __________________ have made a mistake. To make matters worse, while I was waiting <strong>(234)</strong> __________________ the bus stop, a car drove through a puddle and splashed me. By the time I finally arrived <strong>(235)</strong> __________________ the office, the crucial meeting <strong>(236)</strong> __________________ already started. My boss, <strong>(237)</strong> __________________ is usually very understanding, looked quite displeased. I realised that I should <strong>(238)</strong> __________________ left the house earlier. The receptionist told me that the meeting was <strong>(239)</strong> __________________ held in Conference Room B. I sneaked in silently, hoping nobody would notice me, but everyone turned around. I have <strong>(240)</strong> __________________ felt so embarrassed in my entire life.
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; font-weight: bold; font-size: 18px;">
+            --- END OF TEST ---
+        </div>
+    </div> <!-- End Page 9 -->
+
+    <!-- PAGE 10: ANSWER KEY (Always breaks to new page) -->
+    <div class="page page-break-before">
+        <div class="answer-key-section">
+            <div class="key-title">TEACHER'S ANSWER KEY</div>
+            
+            <div class="two-columns">
+                <!-- Part I -->
+                <strong>PART I: TENSES</strong><br>
+                1. boils <span class="key-explanation">(Scientific fact)</span>
+                2. is always taking / 's always taking <span class="key-explanation">(Annoying habit)</span>
+                3. am thinking / 'm thinking <span class="key-explanation">(Mental process/Action)</span>
+                4. is tasting <span class="key-explanation">(Action verb here)</span>
+                5. am staying / 'm staying <span class="key-explanation">(Temporary situation)</span>
+                6. walks / is taking <span class="key-explanation">(Habit vs. breaking habit)</span>
+                7. tastes <span class="key-explanation">(Stative verb)</span>
+                8. do not believe / don't believe <span class="key-explanation">(Stative verb)</span>
+                9. takes / scores <span class="key-explanation">(Sequential quick actions)</span>
+                10. think <span class="key-explanation">(Opinion)</span>
+                11. leaves <span class="key-explanation">(Schedule)</span>
+                12. am meeting / 'm meeting <span class="key-explanation">(Fixed arrangement)</span>
+                13. starts <span class="key-explanation">(Schedule)</span>
+                14. are you smelling <span class="key-explanation">(Action)</span>
+                15. contains <span class="key-explanation">(Stative)</span>
+                16. was watching <span class="key-explanation">(Action in progress at specific time)</span>
+                17. went (or used to go)
+                18. went / travelled <span class="key-explanation">(Single action in past)</span>
+                19. was repairing <span class="key-explanation">(Parallel past actions)</span>
+                20. used to be / was <span class="key-explanation">(Past state)</span>
+                21. got / had / ran <span class="key-explanation">(Sequential past actions)</span>
+                22. rang / was trying <span class="key-explanation">(Interrupted action)</span>
+                23. used to play / played
+                24. didn't use to
+                25. was driving
+                26. Did you use to
+                27. had been raining <span class="key-explanation">(Past perfect continuous for visible result)</span>
+                28. didn't realize
+                29. visited <span class="key-explanation">(Specific number of times)</span>
+                30. was walking
+                31. have known <span class="key-explanation">(Stative verb)</span>
+                32. Have you been running <span class="key-explanation">(Recent action with present result)</span>
+                33. had already left <span class="key-explanation">(Action completed before another)</span>
+                34. had been raining
+                35. has been studying <span class="key-explanation">(Duration up to now)</span>
+                36. have never been <span class="key-explanation">(Experience)</span>
+                37. had been waiting
+                38. have lost <span class="key-explanation">(Past action, present consequence)</span>
+                39. has understood <span class="key-explanation">(Stative verb with since)</span>
+                40. had been walking
+                41. have just announced
+                42. have you been learning
+                43. had lived
+                44. have always liked
+                45. has been writing / has written
+                46. is going to rain <span class="key-explanation">(Evidence based prediction)</span>
+                47. will do <span class="key-explanation">(Opinion based prediction)</span>
+                48. will close / 'll close <span class="key-explanation">(On-the-spot decision)</span>
+                49. is going to study <span class="key-explanation">(Planned intention)</span>
+                50. will help / 'll help <span class="key-explanation">(Offer)</span>
+                51. are having / 're having <span class="key-explanation">(Arrangement)</span>
+                52. will call / 'll call <span class="key-explanation">(Warning/Threat)</span>
+                53. starts
+                54. will pass
+                55. are going to drop
+                <br>
+                
+                <!-- Part II -->
+                <strong>PART II: PREPOSITIONS</strong><br>
+                56. in / on<br>
+                57. at<br>
+                58. [no preposition]<br>
+                59. at<br>
+                60. on<br>
+                61. on / on<br>
+                62. at<br>
+                63. in / at<br>
+                64. in<br>
+                65. in / on<br>
+                66. in<br>
+                67. at<br>
+                68. in<br>
+                69. [no preposition]<br>
+                70. at<br><br>
+
+                <!-- Part III -->
+                <strong>PART III: QUANTIFIERS</strong><br>
+                71. advice<br>
+                72. news / was<br>
+                73. furniture<br>
+                74. much<br>
+                75. little<br>
+                76. luggage<br>
+                77. traffic<br>
+                78. a few<br>
+                79. progress<br>
+                80. bread<br><br>
+
+                <!-- Part IV -->
+                <strong>PART IV: ARTICLES</strong><br>
+                81. a / a<br>
+                82. an / the / the<br>
+                83. The / the<br>
+                84. the / the<br>
+                85. ∅ / ∅ / ∅<br>
+                86. ∅ / ∅<br>
+                87. the<br>
+                88. a / The<br>
+                89. ∅ / ∅<br>
+                90. the<br><br>
+
+                <!-- Part V -->
+                <strong>PART V: MODAL REWRITE</strong><br>
+                91. don't have to wear<br>
+                92. mustn't smoke<br>
+                93. can't be<br>
+                94. must be<br>
+                95. managed to escape / were able to escape<br>
+                96. ought to see<br>
+                97. must wear / have to wear<br>
+                98. could read<br>
+                99. might arrive / may arrive / could arrive<br>
+                100. Can I leave / May I leave / Could I leave<br><br>
+
+                <!-- Part VI -->
+                <strong>PART VI: MODAL PERFECT</strong><br>
+                101. must have got<br>
+                102. needn't have bought<br>
+                103. can't have stolen<br>
+                104. should have studied / ought to have studied<br>
+                105. might have left / may have left / could have left<br>
+                106. shouldn't have eaten<br>
+                107. can't have rained<br>
+                108. should have told<br>
+                109. can't have known / couldn't have known<br>
+                110. should have arrived<br><br>
+
+                <!-- Part VII -->
+                <strong>PART VII: PASSIVE VOICE</strong><br>
+                111. are sent across the globe every single day.<br>
+                112. was invented by Thomas Edison in 1879.<br>
+                113. is being built in the town centre.<br>
+                114. was being repaired when I suddenly arrived at the garage.<br>
+                115. has been completely stolen!<br>
+                116. had been officially cancelled before the spectators even arrived.<br>
+                117. will be announced tomorrow.<br>
+                118. must be completed by the end of today.<br>
+                119. can be purchased through the official online portal.<br>
+                120. was successfully arrested late last night.<br><br>
+
+                <!-- Part VIII -->
+                <strong>PART VIII: RELATIVE CLAUSES</strong><br>
+                121. who/that lives next door is extremely friendly.<br>
+                122. , who currently lives in London, is a highly respected cardiologist.<br>
+                123. whose dog aggressively bit my leg yesterday.<br>
+                124. where we stayed.<br>
+                125. the exact day when we met each other.<br>
+                126. which he purchased last month is incredibly fast.<br>
+                127. why he resigned from his position is still a mystery.<br>
+                128. , who wrote the Harry Potter series, is a famous author.<br><br>
+
+                <!-- Part IX -->
+                <strong>PART IX: TAGS & REPORTED</strong><br>
+                129. aren't you<br>
+                130. did she<br>
+                131. haven't they<br>
+                132. aren't I<br>
+                133. shall we<br>
+                134. will you / would you<br>
+                135. will you<br>
+                136. where the central national bank is<br>
+                137. what exact time the express train to Edinburgh leaves<br>
+                138. why the board of directors rejected the proposal<br>
+                139. Who saw you walking near the restricted area<br>
+                140. she passed her driving test<br><br>
+
+                <!-- Part X -->
+                <strong>PART X: WORD FORMATION</strong><br>
+                141. decision<br>
+                142. affordable<br>
+                143. comparison<br>
+                144. service<br>
+                145. confidence<br>
+                146. bravery<br>
+                147. correct<br>
+                148. refusal<br>
+                149. knowledge<br>
+                150. investigation<br><br>
+
+                <!-- Part XI -->
+                <strong>PART XI: PHRASAL VERBS</strong><br>
+                151. up<br>
+                152. off<br>
+                153. down<br>
+                154. out<br>
+                155. off<br>
+                156. off<br>
+                157. on<br>
+                158. into<br>
+                159. up<br>
+                160. up<br><br>
+
+                <!-- Part XII -->
+                <strong>PART XII: DEPENDENT PREP.</strong><br>
+                161. of<br>
+                162. of<br>
+                163. on<br>
+                164. for<br>
+                165. on<br>
+                166. In<br>
+                167. in<br>
+                168. in<br>
+                169. to<br>
+                170. of<br><br>
+
+                <!-- Part XIII -->
+                <strong>PART XIII: MULTIPLE CHOICE</strong><br>
+                171. B<br>172. C<br>173. A<br>174. B<br>175. A<br>
+                176. C<br>177. C<br>178. C<br>179. B<br>180. A<br>
+                181. B<br>182. C<br>183. A<br>184. B<br>185. A<br>
+                186. C<br>187. C<br>188. B<br>189. B<br>190. D<br>
+                191. C<br>192. C<br>193. B<br>194. C<br>195. A<br>
+                196. C<br>197. C<br>198. C<br>199. C<br>200. A<br><br>
+
+                <!-- Part XIV -->
+                <strong>PART XIV: TRANSFORMATION</strong><br>
+                201. can't have left<br>
+                202. should not have driven<br>
+                203. have been learning French<br>
+                204. is being built<br>
+                205. was stolen<br>
+                206. knew what time the regional manager<br>
+                207. don't have to<br>
+                208. mustn't smoke<br>
+                209. could not afford to<br>
+                210. is always borrowing<br>
+                211. had already departed<br>
+                212. ought to see<br>
+                213. needn't bring<br>
+                214. is considered to be<br>
+                215. where I was<br>
+                216. was called off<br>
+                217. work out<br>
+                218. are looking into<br>
+                219. looking forward to going<br>
+                220. no attention to<br><br>
+
+                <!-- Part XV -->
+                <strong>PART XV: CLOZE TEST</strong><br>
+                221. has<br>
+                222. used<br>
+                223. who / that<br>
+                224. which<br>
+                225. are<br>
+                226. do<br>
+                227. can / will<br>
+                228. will<br>
+                229. it<br>
+                230. not<br>
+                231. was<br>
+                232. should / ought to<br>
+                233. must<br>
+                234. at<br>
+                235. at<br>
+                236. had<br>
+                237. who<br>
+                238. have<br>
+                239. being<br>
+                240. never<br>
+            </div>
+        </div>
+    </div> <!-- End Page 10 (Answer Key) -->
+
+</body>
+</html>
